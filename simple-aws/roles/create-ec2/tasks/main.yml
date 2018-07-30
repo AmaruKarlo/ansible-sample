@@ -6,7 +6,7 @@
     keypair: "{{ ec2_server_keypair }}"
     instance_type: "{{ ec2_instance_type }}"
     image: "{{ ec2_server_image }}"
- #   vpc_subnet_id: "{{ ec2_vpc_subnet_id}}"
+    vpc_subnet_id: "{{ ec2_vpc_subnet_id}}"
     assign_public_ip: "{{ ec2_assign_public_ip }}"
     wait: True
     wait_timeout: 600
