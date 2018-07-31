@@ -14,6 +14,22 @@
   #  - name_start_index: 10
   #  - name_prefix: "VMANSADV"
   #  - ec2_assign_public_ip: true
+  
+  vars:
+     - ec2_server_image: ami-2c95344f
+     - ec2_instance_type: t2.micro
+     - ec2_server_region: ap-southeast-1
+     - ec2_server_keypair: kcp-aws
+     - ec2_server_instcount: 1
+     - name_start_index: 10
+     - name_prefix: "VMANSADV"
+     - ec2_assign_public_ip: true
+     - ansible_ec2_use_public_ip: true
+     - ec2_vpc_subnet_id: subnet-f3d2efba
+     - tower_host: localhost
+     - tower_username: admin
+     - tower_password: password123
+
 
     #Defaults in role
     #ec2_server_image: 'ami-f068a193' # Centos 7 in ap-southeast-1
@@ -27,6 +43,9 @@
    #     Vendor: RedHat
 
    - tower_inventory_name: "VMANSADV"
+     - tower_host: localhost
+     - tower_username: admin
+     - tower_password: password123
     #- tower_host: 
     #- tower_username: 
     #- tower_password: 
