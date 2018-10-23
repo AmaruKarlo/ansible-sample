@@ -27,9 +27,9 @@
    #     Vendor: RedHat
 
    - tower_inventory_name: "VMANSADV"
-    - tower_host: 
-    - tower_username: 
-    - tower_password: 
+    #- tower_host: 
+    #- tower_username: 
+    #- tower_password: 
 
   roles:
     - { role: create-ec2 }
